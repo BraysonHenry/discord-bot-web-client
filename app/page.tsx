@@ -1,7 +1,8 @@
 'use client';
+
 import React, { useState, useEffect } from 'react';
-import LoginModal from './components/LoginModal';
-import { Hash, Volume2, Mic, MicOff, PhoneOff } from 'lucide-react';
+import LoginModal from '@/app/components/LoginModal';
+import { Hash, Volume2, Mic, PhoneOff } from 'lucide-react';
 
 export default function Home() {
   const [token, setToken] = useState<string | null>(null);
