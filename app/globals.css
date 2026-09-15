@@ -1,1 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+body {
+  background-color: #313338;
+  color: #f2f3f5;
+  user-select: none;
+  overflow: hidden;
+}
