@@ -20,7 +20,7 @@ export default function LoginModal({ onLogin }: Props) {
       <div className="bg-[#2b2d31] w-full max-w-md p-6 rounded-lg border border-[#1e1f22] shadow-2xl">
         {step === 'input' ? (
           <form onSubmit={handleSubmit} className="space-y-4">
-            <h2 className="text-xl font-bold text-center">DiscordBotWebClient</h2>
+            <h2 className="text-xl font-bold text-center text-white">DiscordBotWebClient</h2>
             <p className="text-xs text-gray-400 text-center">Enter your bot token to connect.</p>
             <div>
               <label className="block text-xs font-bold uppercase text-gray-300 mb-1">Bot Token</label>
@@ -36,7 +36,7 @@ export default function LoginModal({ onLogin }: Props) {
                 <Key className="absolute right-3 top-3 w-4 h-4 text-gray-400" />
               </div>
             </div>
-            <button className="w-full bg-[#5865f2] hover:bg-[#4752c4] p-2.5 rounded font-medium text-sm transition">
+            <button className="w-full bg-[#5865f2] hover:bg-[#4752c4] p-2.5 rounded font-medium text-sm text-white transition">
               Verify Settings
             </button>
           </form>
@@ -52,13 +52,13 @@ export default function LoginModal({ onLogin }: Props) {
             <div className="flex space-x-2 pt-2">
               <button
                 onClick={() => setStep('input')}
-                className="w-1/2 bg-gray-600 hover:bg-gray-700 p-2 rounded text-sm font-medium"
+                className="w-1/2 bg-gray-600 hover:bg-gray-700 p-2 rounded text-sm font-medium text-white"
               >
                 Back
               </button>
               <button
                 onClick={() => onLogin(token)}
-                className="w-1/2 bg-[#23a55a] hover:bg-[#1d8a4b] p-2 rounded text-sm font-medium"
+                className="w-1/2 bg-[#23a55a] hover:bg-[#1d8a4b] p-2 rounded text-sm font-medium text-white"
               >
                 Confirm & Connect
               </button>
